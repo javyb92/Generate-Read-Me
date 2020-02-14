@@ -60,6 +60,7 @@ function init() {
           console.log(data);
         });
 })
+writeToFile()
 };
 
 // //Write to file, 
