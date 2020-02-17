@@ -55,6 +55,8 @@ function promptUser(){
 //Insert answers in preformatted ReadMe.md file
 function generateReadMe(answers){
     return `
+    ![social](https://img.shields.io/github/followers/${answers.userName}?style=social)
+
     # ${answers.projectTitle}
 
     ## About The Project
@@ -67,18 +69,24 @@ function generateReadMe(answers){
     ${answers.projectInstallation}
     
     ## Usage
-    
+
+
+    ## Testing
+    ${answers.projectTesting}
     
     ## License
     ${answers.projectLicenses}
 
     ## Contact
     
-    Github Link:
+    ![Javier]("Javier")
+
+
+    Github Link: https://github.com/${answers.userName}
     
     Email Link: ${answers.userEmail}
     
-    Project Link:
+    Project Link: 
     
    
    
@@ -97,6 +105,10 @@ async function init() {
         const queryUrl = `https://api.github.com/users/${answers.userName}/repos?per_page=100`;
         axios.get(queryUrl).then(function(data) {
         console.log(data);
+        // var myEmail=data.data[0].payload.commits[0].author.email;
+        // var myPicture = data.data[0].actor.avatar_url;
+        //   console.log(myEmail);
+        //   console.log(myPicture);
     });  
 
 }
