@@ -70,6 +70,7 @@ ${answers.projectInstallation}
     
 ## Usage
 Refer to the gif below.
+![Generator](https://gfycat.com/closecalmcrayfish)
 
 ## Testing
 ${answers.projectTesting}
@@ -83,7 +84,7 @@ Github Link: https://github.com/${answers.userName}
     
 Email Link: ${answers.userEmail}
     
-Project Link: 
+Project Link: https://github.com/javyb92/Generate-Read-Me/blob/master/README.md
     
    
    
@@ -102,10 +103,6 @@ async function init() {
         const queryUrl = `https://api.github.com/users/${answers.userName}/repos?per_page=100`;
         axios.get(queryUrl).then(function(data) {
         console.log(data);
-        // var myEmail=data.data[0].payload.commits[0].author.email;
-        // var myPicture = data.data[0].actor.avatar_url;
-        //   console.log(myEmail);
-        //   console.log(myPicture);
     });  
 
 }
