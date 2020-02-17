@@ -1,10 +1,10 @@
 const fs = require("fs");
-// const path = require("path");
 const inquirer = require("inquirer")   
 const axios = require("axios")
 const util = require("util");
 
-    //Questions asked with prompt of inquirer
+
+//Questions asked with prompt of inquirer
 const writeToFileAsync = util.promisify(fs.writeFile);
 function promptUser(){
     return inquirer.prompt([
@@ -55,42 +55,39 @@ function promptUser(){
 //Insert answers in preformatted ReadMe.md file
 function generateReadMe(answers){
     return `
-    ![social](https://img.shields.io/github/followers/${answers.userName}?style=social)
+![social](https://img.shields.io/github/followers/${answers.userName}?style=social)
 
-    # ${answers.projectTitle}
+# ${answers.projectTitle}
 
-    ## About The Project
-    ${answers.projectDescription}
+## About The Project
+${answers.projectDescription}
     
-    ### Built With
-    ${answers.projectAssets}
+### Built With
+${answers.projectAssets}
 
-    ### Installation
-    ${answers.projectInstallation}
+### Installation
+${answers.projectInstallation}
     
-    ## Usage
+## Usage
 
 
-    ## Testing
-    ${answers.projectTesting}
+## Testing
+${answers.projectTesting}
     
-    ## License
-    ${answers.projectLicenses}
+## License
+${answers.projectLicenses}
 
-    ## Contact
-    
-    ![Javier]("Javier")
+## Contact
 
-
-    Github Link: https://github.com/${answers.userName}
+Github Link: https://github.com/${answers.userName}
     
-    Email Link: ${answers.userEmail}
+Email Link: ${answers.userEmail}
     
-    Project Link: 
+Project Link: 
     
    
    
-    `}
+`}
 
 
 //init function at startup       
@@ -98,7 +95,7 @@ async function init() {
     try{
 
         const answers = await promptUser();
-        console.log(answers)
+        // console.log(answers)
         const newReadMe = generateReadMe(answers);
         await writeToFileAsync ("README.md", newReadMe);
         
@@ -116,7 +113,6 @@ async function init() {
         console.log(err)
         inquirer.prompt(answers)
 }
-
 
 
 }
