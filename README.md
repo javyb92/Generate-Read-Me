@@ -1,5 +1,4 @@
-
-    ![social](https://img.shields.io/github/followers/javyb92?style=social)
+![social](https://img.shields.io/github/followers/javyb92?style=social)
 
     # Github ReadMe Generator
 
@@ -30,7 +29,7 @@
     
     Email Link: javier.a.brragan92@gmail.com
     
-    Project Link: 
+    Project Link: s
     
    
    
