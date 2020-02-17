@@ -70,7 +70,7 @@ ${answers.projectInstallation}
     
 ## Usage
 Refer to the gif below.
-![Generator](https://gfycat.com/closecalmcrayfish)
+![Generator](recording.gif)
 
 ## Testing
 ${answers.projectTesting}

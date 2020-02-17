@@ -14,7 +14,7 @@ Have node.js, make jure to npm install inquirer aand axios
     
 ## Usage
 Refer to the gif below.
-![Generator](https://gfycat.com/closecalmcrayfish)
+![Generator](recording.gif)
 
 ## Testing
 Type "node index.js", answer prompts.
