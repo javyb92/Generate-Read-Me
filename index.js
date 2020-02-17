@@ -69,7 +69,7 @@ ${answers.projectAssets}
 ${answers.projectInstallation}
     
 ## Usage
-
+Refer to the gif below.
 
 ## Testing
 ${answers.projectTesting}
