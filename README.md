@@ -1,36 +1,33 @@
+
 ![social](https://img.shields.io/github/followers/javyb92?style=social)
 
-    # Github ReadMe Generator
+# ReadMe Generator
 
-    ## About The Project
-    It uses node stuff like inquirer and axios to generate ReadMe 
+## About The Project
+Want to make this complicated? Generate ReadMes with Node.js with inquirer and Axios. 
     
-    ### Built With
-    javascript, node.js
+### Built With
+NODE, Inquirer, AXIOS. LOVE.
 
-    ### Installation
-    Use node. Need Inquirer and Axios
+### Installation
+Have node.js, make jure to npm install inquirer aand axios
     
-    ## Usage
+## Usage
+Refer to the gif below.
 
-
-    ## Testing
-    Type "node index.js", answer prompts
+## Testing
+Type "node index.js", answer prompts.
     
-    ## License
-    None
+## License
+None.
 
-    ## Contact
-    
-    ![Javier]("Javier")
+## Contact
 
-
-    Github Link: https://github.com/javyb92
+Github Link: https://github.com/javyb92
     
-    Email Link: javier.a.brragan92@gmail.com
+Email Link: javier.a.barragan92@gmail.com
     
-    Project Link: s
+Project Link: 
     
    
    
-    
